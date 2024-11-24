@@ -37,7 +37,7 @@ social_media:
   # keybase: your_username
    linkedin: roland-bouwer
   # mastodon: your_username
-  # medium: your_username
+   medium: rolandbouwer
    stackoverflow: 22672442
   # telegram: your_username
   # twitter: your_username
@@ -45,7 +45,7 @@ social_media:
   # vk: your_username
   # website: http://your_website_url
   # youtube: your_username
-  # trailhead: rbouwer
+   trailhead: rbouwer
 
 topics:
   - name: CSS
