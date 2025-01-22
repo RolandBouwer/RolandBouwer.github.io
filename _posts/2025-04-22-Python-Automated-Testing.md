@@ -20,11 +20,11 @@ Before starting, ensure you have the following:
 
 4.Installed libraries:
 
-  pytest
+  * pytest
   
-  pytest-playwright
+  * pytest-playwright
   
-  openai (for ChatGPT integration)
+  * openai (for ChatGPT integration)
 
 Install the necessary libraries with:
 
@@ -48,11 +48,11 @@ Initialize a Playwright project:
 
 Install these recommended VS Code extensions:
 
-Python: For syntax highlighting and debugging.
+* Python: For syntax highlighting and debugging.
 
-Playwright Test for VS Code: To manage and run Playwright tests.
+* Playwright Test for VS Code: To manage and run Playwright tests.
 
-GitLens: For version control.
+* GitLens: For version control.
 
 ## Writing a Test with Playwright and Pytest
 
@@ -119,21 +119,21 @@ View the test results in the terminal or integrate them into CI/CD pipelines for
 
 # Pytest:
 
-Simple syntax and detailed reports.
+* Simple syntax and detailed reports.
 
-Highly extensible with plugins.
+* Highly extensible with plugins.
 
 # Playwright:
 
-Cross-browser testing with ease.
+* Cross-browser testing with ease.
 
-Supports modern web features.
+* Supports modern web features.
 
 # ChatGPT:
 
-Dynamically generates test inputs for broader coverage.
+* Dynamically generates test inputs for broader coverage.
 
-Saves time and enhances creativity in test scenarios.
+* Saves time and enhances creativity in test scenarios.
 
 ## Conclusion
 
