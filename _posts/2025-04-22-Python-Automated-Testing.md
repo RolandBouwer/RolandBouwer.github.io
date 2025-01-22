@@ -1,5 +1,5 @@
 ---
-title: "Automating Application Testing with Pytest, VS Code, and Playwright!"
+title: "Automating Application Testing with Pytest"
 published: true
 ---
 
