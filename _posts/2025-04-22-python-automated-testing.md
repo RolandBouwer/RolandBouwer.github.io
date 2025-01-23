@@ -1,9 +1,9 @@
 ---
-title: "Automating Application Testing with Pytest"
+title: "Automated Application Testing Using Pytest"
 published: true
 ---
 
-## Introduction
+**Introduction**
 
 Automated testing is essential for ensuring application reliability and efficiency. Combining the power of Pytest, VS Code, and Playwright, you can create robust end-to-end test suites. In this guide, we’ll demonstrate how to automate a search functionality test for Google using a sample site and generate search questions dynamically with ChatGPT prompts.
 
