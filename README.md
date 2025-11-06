@@ -1,30 +1,92 @@
-# Personal Portfolio
+# Roland Bouwer — Personal Portfolio
 
-This repository contains a beautiful, responsive personal portfolio built using **React**, **Vite**, and **TailwindCSS**. The project showcases modern web development techniques including smooth animations, responsive layouts, and interactive UI components.
+Live site: [https://rolandbouwer.github.io/#projects](https://rolandbouwer.github.io/#projects)
 
-### Want to watch this?
-[![Check this out](https://img.youtube.com/vi/LGdPMf-SgBA/maxresdefault.jpg)](https://youtu.be/LGdPMf-SgBA)
+This repository contains my personal portfolio website built with React, Vite and TailwindCSS. It showcases projects, a short bio, and a contact form that uses EmailJS to forward messages.
 
+## Tech stack
 
-## Features
+- React
+- Vite
+- TailwindCSS
 
-- **Modern Design:** Clean, SaaS-inspired design with a glass-effect navbar and sleek animations.
-- **Responsive Layout:** Fully responsive across desktop, tablet, and mobile devices.
-- **Interactive Components:** Animated sections and a mobile-friendly hamburger menu with smooth transitions.
-- **Optimized Performance:** Fast development build using Vite with TailwindCSS for efficient styling.
+## Development
 
-## Technologies
+1. Clone the repo and install dependencies:
 
-- **React:** Component-based UI library.
-- **Vite:** Fast and lean development build tool.
-- **TailwindCSS:** Utility-first CSS framework.
-- **JavaScript (ES6+):** Modern JavaScript features and best practices.
+```bash
+git clone https://github.com/RolandBouwer/RolandBouwer.github.io.git
+cd RolandBouwer.github.io
+npm install
+```
 
-## Installation
+1. Run the dev server:
 
-1. **Clone the repository:**
+```bash
+npm run dev
+```
 
-   ```bash
-   git clone https://github.com/your-username/your-portfolio.git
-   cd your-portfolio
-   ```
+1. Build for production:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Contact form (EmailJS)
+
+The contact form uses EmailJS to send messages from the client. You must provide these environment variables at build time so the site can send emails in production:
+
+- `VITE_SERVICE_ID` — EmailJS service ID
+- `VITE_TEMPLATE_ID` — EmailJS template ID
+- `VITE_PUBLIC_KEY` — EmailJS public key
+
+Local development: create a `.env` or `.env.local` at the project root with the variables above (replace the values):
+
+```env
+VITE_SERVICE_ID=service_xxx
+VITE_TEMPLATE_ID=template_xxx
+VITE_PUBLIC_KEY=public_xxx
+```
+
+CI / GitHub Pages Deploy: add the same three values as repository secrets and ensure they are exposed to the build step (the project's workflow already sets `VITE_*` at the job level so the build can access them).
+
+Note: the project now uses `@emailjs/browser` (replaced the deprecated `emailjs-com` package).
+
+## Deployment
+
+This site is published to GitHub Pages from this repository. The workflow in `.github/workflows/main.yml` builds the site and deploys the `dist` artifact to Pages.
+
+## Contributing / Notes
+
+- The site is a personal project and not currently accepting external contributions; feel free to open an issue if you spot a bug.
+- After making changes, run `npm run build` to verify there are no compile-time problems.
+
+If you want me to add a short changelog entry about switching to `@emailjs/browser`, I can append that here.
+
+## Changelog
+
+- 2025-11-06 — Replaced deprecated `emailjs-com` with `@emailjs/browser`. Also:
+	- Improved contact form UX: added loading state, accessible success/error messages, and clearer error logging.
+	- Added a guard and warning when EmailJS `VITE_*` environment variables are not set.
+	- Ensured CI exposes `VITE_SERVICE_ID`, `VITE_TEMPLATE_ID`, and `VITE_PUBLIC_KEY` at build time so production builds include the correct configuration.
+
+## EmailJS (Contact form) setup
+
+The contact form uses EmailJS to send messages from the client. To enable the contact form in production you need to provide three environment variables at build time:
+
+- `VITE_SERVICE_ID` — your EmailJS service ID
+- `VITE_TEMPLATE_ID` — your EmailJS template ID
+- `VITE_PUBLIC_KEY` — your EmailJS public key (sometimes called `user` or `publicKey`)
+
+When deploying from GitHub Actions, these should be added as repository secrets and exposed to the build step. Example: add the three secrets to your repo (Settings -> Secrets) and ensure your CI sets them for the build step (not only the deploy step). The workflow in `.github/workflows/main.yml` has been updated to make these available to the build.
+
+For local development, create a `.env.local` or `.env` file at the project root with the following keys (replace with your values):
+
+```
+VITE_SERVICE_ID=service_xxx
+VITE_TEMPLATE_ID=template_xxx
+VITE_PUBLIC_KEY=public_xxx
+```
+
+Note: Vite requires the `VITE_` prefix so values are exposed to client code at build time.
