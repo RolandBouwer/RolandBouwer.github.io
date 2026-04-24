@@ -20,18 +20,42 @@ cd RolandBouwer.github.io
 npm install
 ```
 
-1. Run the dev server:
+2. Run the dev server:
 
 ```bash
 npm run dev
 ```
 
-1. Build for production:
+3. Build for production:
 
 ```bash
 npm run build
 npm run preview
 ```
+
+## GitHub usage
+
+- Visit the portfolio source on GitHub: https://github.com/RolandBouwer/RolandBouwer.github.io
+- Clone any repo locally with:
+
+```bash
+git clone https://github.com/RolandBouwer/<repo-name>.git
+```
+
+- For JavaScript projects:
+
+```bash
+npm install
+npm run dev
+```
+
+- For Python projects:
+
+```bash
+pip install -r requirements.txt
+```
+
+- Each repository includes its own README with setup and deployment instructions.
 
 ## Contact form (EmailJS)
 

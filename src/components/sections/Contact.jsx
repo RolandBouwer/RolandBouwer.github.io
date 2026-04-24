@@ -47,13 +47,13 @@ export const Contact = () => {
       className="min-h-screen flex items-center justify-center py-20"
     >
       <RevealOnScroll>
-        <div className="px-4 w-150">
+        <div className="px-4 max-w-xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             Get In Touch
           </h2>
 
           {envMissing && (
-            <div className="mb-4 text-sm text-yellow-300">
+            <div className="mb-4 rounded-2xl border border-yellow-300/20 bg-yellow-300/5 p-4 text-sm text-yellow-300">
               Contact form is not configured — emails will not be sent until the
               site owner sets up EmailJS environment variables.
             </div>

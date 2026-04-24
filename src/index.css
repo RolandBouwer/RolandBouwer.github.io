@@ -5,8 +5,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Space Grotesk", sans-serif;
-  background: #0a0a0a;
+  min-height: 100%;
+  background: radial-gradient(circle at top, rgba(59,130,246,0.16), transparent 24%),
+    radial-gradient(circle at 30% 80%, rgba(14,165,233,0.1), transparent 18%),
+    #040505;
   color: #f3f4f6;
+}
+
+section {
+  scroll-margin-top: 5rem;
 }
 
 @layer utilities {

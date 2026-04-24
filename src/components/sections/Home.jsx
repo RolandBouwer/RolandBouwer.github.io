@@ -4,33 +4,37 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.18),_transparent_28%),radial-gradient(circle_at_bottom_right,_rgba(14,165,233,0.16),_transparent_22%)] pointer-events-none" />
       <RevealOnScroll>
-        <div className="text-center z-10 px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-right">
-            Hi, I'm Roland Bouwer
+        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
+          <div className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-blue-200 mb-6 backdrop-blur-sm shadow-sm">
+            Software Developer · Cloud Automation · Quality Engineering
+          </div>
+
+          <h1 className="text-5xl md:text-6xl font-semibold mb-6 leading-tight tracking-tight text-white">
+            Hi, I'm <span className="text-blue-300">Roland Bouwer</span>
           </h1>
 
-          <p className="tex-gray-400 text-lg mb-8 max-w-lg mx-auto">
-          I am a Software Developer with over six years of experience in software development, test automation, and cloud computing. 
-          I hold certifications in ISTQB, AWS, and Azure and have a strong background in testing methodologies, automation frameworks, and cloud technologies.
-          I have hands-on experience implementing Azure DevOps pipelines, automating test workflows, and integrating infrastructure as code (IaC) for cloud deployments.
+          <p className="text-gray-300 text-base md:text-lg leading-8 mb-8 max-w-3xl mx-auto">
+            Johannesburg-based Software Developer and Quality Engineer with a strong focus on cloud automation, test engineering, and resilient delivery pipelines. I leverage over six years of experience in Azure/AWS, automation frameworks, and DevOps practices to deliver stable, production-ready solutions.
           </p>
-          <div className="flex justify-center space-x-4">
+
+          <div className="flex flex-col sm:flex-row sm:justify-center gap-4">
             <a
               href="#projects"
-              className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]"
+              className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 transition-transform duration-200 hover:-translate-y-0.5"
             >
-              View Projects
+              Explore Projects
             </a>
-
             <a
-              href="#contact"
-              className="border border-blue-500/50 text-blue-500 py-3 px-6 rounded font-medium transition-all duration-200 
-             hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)] hover:bg-blue-500/10"
+              href="https://github.com/RolandBouwer"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center rounded-full border border-blue-400/40 bg-white/5 px-7 py-3 text-sm font-semibold text-blue-200 transition duration-200 hover:bg-blue-500/10 hover:text-white"
             >
-              Contact Me
+              View GitHub
             </a>
           </div>
         </div>

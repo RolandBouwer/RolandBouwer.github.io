@@ -20,34 +20,34 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             &#9776;
           </div>
 
-          <div className="hidden md:flex items-center space-x-8">
-            <a
-              href="#home"
-              className="text-gray-300 hove:text-white transition-colors"
-            >
-              {" "}
+          <div className="hidden md:flex items-center space-x-8 text-sm">
+            <a href="#home" className="text-gray-300 hover:text-white transition-colors">
               Home
             </a>
-            <a
-              href="#about"
-              className="text-gray-300 hove:text-white transition-colors"
-            >
-              {" "}
-              About{" "}
+            <a href="#about" className="text-gray-300 hover:text-white transition-colors">
+              About
+            </a>
+            <a href="#projects" className="text-gray-300 hover:text-white transition-colors">
+              Projects
+            </a>
+            <a href="#contact" className="text-gray-300 hover:text-white transition-colors">
+              Contact
             </a>
             <a
-              href="#projects"
-              className="text-gray-300 hove:text-white transition-colors"
+              href="https://github.com/RolandBouwer"
+              target="_blank"
+              rel="noreferrer"
+              className="text-blue-300 hover:text-blue-100 transition-colors"
             >
-              {" "}
-              Projects{" "}
+              GitHub
             </a>
             <a
-              href="#contact"
-              className="text-gray-300 hove:text-white transition-colors"
+              href="https://za.linkedin.com/in/roland-bouwer"
+              target="_blank"
+              rel="noreferrer"
+              className="text-blue-300 hover:text-blue-100 transition-colors"
             >
-              {" "}
-              Contact{" "}
+              LinkedIn
             </a>
           </div>
         </div>
