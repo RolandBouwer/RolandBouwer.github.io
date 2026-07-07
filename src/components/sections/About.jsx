@@ -59,20 +59,31 @@ export const About = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="p-6 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4">🏫 Education</h3>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>
-                  <strong>B.Tec. in Information Technology</strong> - Central University of Technology, FS (2008-2012)
-                </li>
-                <li>
-                  Relevant Coursework: Software Development, Project Management, Database Administration
-                </li>
-              </ul>
+          <div className="mt-8 p-6 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm hover:-translate-y-1 transition-all">
+            <h3 className="text-xl font-bold mb-6">📚 Experience</h3>
+            
+            {/* Education Section */}
+            <div className="mb-8">
+              <h4 className="text-lg font-semibold mb-4 text-blue-400">Education</h4>
+              <div className="space-y-4 text-gray-300">
+                <div>
+                  <p className="font-semibold">Post Graduate Diploma in Information Technology Management</p>
+                  <p className="text-sm text-blue-300">Mancosa · In Progress</p>
+                </div>
+                <div>
+                  <p className="font-semibold">B.Tec. in Information Technology</p>
+                  <p className="text-sm text-blue-300">Central University of Technology, FS (2008-2012)</p>
+                  <p className="text-sm mt-2">Relevant Coursework: Software Development, Project Management, Database Administration</p>
+                </div>
+              </div>
             </div>
-            <div className="p-6 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4">💼 Work Experience</h3>
+
+            {/* Divider */}
+            <div className="border-t border-white/10 my-6"></div>
+
+            {/* Work Experience Section */}
+            <div>
+              <h4 className="text-lg font-semibold mb-4 text-blue-400">Work Experience</h4>
               <div className="space-y-6 text-gray-300">
                 <div>
                   <h4 className="font-semibold">Cloud Engineer at Standard Bank Group</h4>
