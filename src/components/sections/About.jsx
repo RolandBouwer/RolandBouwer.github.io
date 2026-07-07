@@ -86,7 +86,7 @@ export const About = () => {
               <h4 className="text-lg font-semibold mb-4 text-blue-400">Work Experience</h4>
               <div className="space-y-6 text-gray-300">
                 <div>
-                  <h4 className="font-semibold">Cloud Engineer at Standard Bank Group</h4>
+                  <h5 className="font-semibold">Cloud Engineer at Standard Bank Group</h5>
                   <p className="text-sm text-blue-300 mb-2">Mar 2023 - Present · 3 yrs 2 mos · Hybrid · Johannesburg Metropolitan Area</p>
                   <ul className="list-disc list-inside space-y-2 text-gray-300 ml-4">
                     <li>Design and develop cloud-native applications on Azure using .NET (ASP.NET Core, Razor Pages, Web APIs) and Python (FastAPI, Flask).</li>
